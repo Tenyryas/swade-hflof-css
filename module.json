@@ -1,0 +1,17 @@
+{
+  "name": "swade-hflof-css",
+  "title": "SWADE Hellfrost LoF Theme",
+  "description": "<p>An Hellfrost LoF character sheet theme for SWADE</p>",
+  "version": "1.0.0",
+  "author": "Kyane, SalieriC",
+  "systems": ["swade"],
+  "scripts": [],
+  "esmodules": [],
+  "styles": ["swade_hflof.css"],
+  "packs": [],
+  "url": "https://github.com/Tenyryas/swade-hflof-css",
+  "manifest": "https://raw.githubusercontent.com/Tenyryas/swade-hflof-css/master/module.json",
+  "download": "https://github.com/Tenyryas/swade-book-css/raw/v1.0.0/swade-hflof-css.zip",
+  "compatibleCoreVersion" : "0.6.6",
+  "minimumCoreVersion": "0.6.6"
+}
