@@ -11,7 +11,7 @@
   "packs": [],
   "url": "https://github.com/Tenyryas/swade-hflof-css",
   "manifest": "https://raw.githubusercontent.com/Tenyryas/swade-hflof-css/master/module.json",
-  "download": "https://github.com/Tenyryas/swade-book-css/raw/v1.0.0/swade-hflof-css.zip",
+  "download": "https://github.com/Tenyryas/swade-hflof-css/raw/v1.0.0/swade-hflof-css.zip",
   "compatibleCoreVersion" : "0.6.6",
   "minimumCoreVersion": "0.6.6"
 }
