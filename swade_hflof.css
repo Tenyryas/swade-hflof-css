@@ -29,13 +29,28 @@
     background: rgba(0, 0, 0, 0.1);
 }
 .swade.sheet .checkmark {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #8F7A4D;
 }
 .swade.sheet .check-container:hover input ~ .checkmark {
-  background-color: #8f7a4d;
+  background-color: rgba(181, 165, 118, 1);
+  border: solid #f0c950;
+  border-width: 1px;
+}
+.swade.sheet .check-container:hover input ~ .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .swade.sheet .check-container input:checked ~ .checkmark {
-  background-color: #8f7a4d;
+  background-color: #8F7A4D;
+}
+.swade.sheet .check-container:hover input:checked ~ .checkmark {
+  background-color: rgba(181, 165, 118, 1);
 }
 .swade.sheet .check-container .checkmark:after {
   border: solid white;
