@@ -33,8 +33,7 @@
 }
 .swade.sheet .check-container:hover input ~ .checkmark {
   background-color: rgba(181, 165, 118, 1);
-  border: solid #f0c950;
-  border-width: 1px;
+  border: 1px solid #f0c950;
 }
 .swade.sheet .check-container:hover input ~ .checkmark:after {
   left: 5px;
@@ -56,25 +55,47 @@
   border: solid white;
   border-width: 0 3px 3px 0;
 }
-.swade.sheet.actor .sheet-body .editor {
-  border: 1px groove #FFFFFF;
+.swade.sheet .sheet-body .editor {
+  background-image: url("./ui/parchment2.jpg");
+}
+.swade.sheet.item .sheet-body .editor{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+.swade.sheet.actor .sheet-body .editor{
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 0;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.swade.sheet.actor .sheet-body .header-field .fa-plus:hover {
+  filter: drop-shadow(0 0 5px #FFFFFF);
+}
+.swade.sheet.actor .sheet-body .biography .header-field {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .swade.sheet.actor .sheet-body .attributes .attributes-list .attribute input {
     background: rgba(0, 0, 0, 0.1);
 }
 .swade.sheet.actor .sheet-body .gear .gear-list .gear-card {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
 }
 .swade.sheet.actor .sheet-body .gear .gear-list .gear-card .card-header {
-  background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+.swade.sheet.actor .sheet-body .gear .gear-list .gear-card .card-header .item-image{
+    border-radius: 6px;
 }
 .swade.sheet.actor .sheet-body .gear .gear-list .gear-card .card-content {
-  border-top: 1px solid #FFFFFF;
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(0, 0, 0, 0.1);
-}
-.swade.sheet.actor .sheet-body .gear .gear-list .gear-card .chips .chip .chip-content {
-  background-color: #8f7a4d;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    background-image: url("./ui/parchment2.jpg"); 
 }
 .swade.sheet.actor .sheet-body .powers input[type=text]{
     background: rgba(0, 0, 0, 0.1);
@@ -94,19 +115,39 @@
   background: #b5a576;
   border: 1px solid rgb(240, 201, 80);
 }
-
 .swade.sheet.actor .sheet-body .powers input[type=text]::placeholder{
     color: rgba(255, 255, 255, 0.75);
 }
-
 .swade.sheet.actor .sheet-body .powers .powers-list .power {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-image: url("./ui/parchment2.jpg");
+  border-radius: 10px;
+  border-color: rgba(0,0,0,0.1);
+}
+.swade.sheet.actor .sheet-body .powers .powers-list .power .item-image {
+  border-top-left-radius: 10px;
 }
 .swade.sheet.actor .sheet-body .powers .powers-list .power .power-header {
-  background: rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: #8f7a4d;
+  border-bottom: 0px solid rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: white;
 }
-
+.swade.sheet.actor .sheet-body .powers .powers-list .power .power-header .fas:hover {
+  filter: drop-shadow(0 0 5px #FFFFFF);
+}
+.swade.sheet.actor .powers .powers-list .power .power-header .item-controls .item-unequipped{
+    text-shadow: none;
+}
+.swade.sheet.actor .powers .powers-list .power .power-header .item-controls {
+  color: white;
+}
+.swade.sheet.actor .powers .powers-list .power .power-header .item-controls .fas {
+  font-weight: normal;
+}
+.swade.sheet.actor .powers .powers-list .power .power-header .item-controls .fa-star {
+  font-weight: bold;
+}
 .swade.sheet.actor.character .vitals .bennies .benny-tracker .bennies-current {
   background: rgba(0, 0, 0, 0.1);
   border-top-left-radius: 4px;
@@ -122,10 +163,48 @@
 .swade.sheet.actor .inventory .inventory-categories .item-titles {
     background: #000000;
 }
-
+.swade.sheet.actor .inventory .inventory-categories .item-image{
+    border-radius: 5px;
+}
 .swade.sheet ::-webkit-scrollbar-thumb {
     outline: none;
     border-radius: 3px;
     background: #b5a576;
     border: 1px solid #8F7A4D;
+}
+#chat-log .chat-message {
+  background-image: url("./ui/parchment3.jpg");
+}
+textarea#chat-message {
+ background-image: url("./ui/parchment3.jpg");
+}
+#chat-log .chat-message.whisper {
+ background-image: url("./ui/parchment3.jpg");
+ border: 3px solid #ffd453;
+}
+.swade.chat-card .card-header {
+ background: #8f7a4d;
+ margin-left: -5px;
+ border-top: none;
+ border-top-right-radius: 10px;
+ border-bottom-right-radius: 10px;
+ border-bottom: none;
+ box-shadow: 0px 15px 10px -15px rgba(0,0,0,1);
+}
+.swade.chat-card .card-header:hover {
+  background: #b5a576;
+}
+.swade.chat-card .card-header img {
+    flex: 0 0 36px;
+    margin-left: 5px;
+    margin-right: 5px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,1);
+}
+.swade.chat-card .card-header a {
+ color: #fff;
+}
+.swade.chat-card .card-header a:hover {
+  text-shadow: 0 0 7px #fff;
 }
