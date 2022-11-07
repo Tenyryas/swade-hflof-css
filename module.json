@@ -1,20 +1,24 @@
 {
+  "id": "swade-hflof-css",
   "title": "SWADE Land of Fire Theme",
   "description": "<p>An Hellfrost Land Of Fire character sheet theme for SWADE<a target=\"_blank\" href=\"https://www.brusheezy.com\">Free Brushes by Brusheezy</a></p>",
   "version": "1.3.0",
+  "authors": [
+    {
+      "name": "Kyane",
+      "url": "https://github.com/Tenyryas",
+      "discord": "Kyane#8654"
+    },
+    {
+      "name": "SalieriC"
+    }
+  ],
   "styles": [
     "swade_hflof.css"
   ],
   "url": "https://github.com/Tenyryas/swade-hflof-css",
   "manifest": "https://raw.githubusercontent.com/Tenyryas/swade-hflof-css/master/module.json",
   "download": "https://github.com/Tenyryas/swade-hflof-css/raw/v1.3.0/swade-hflof-css.zip",
-  "id": "swade-hflof-css",
-  "authors": [
-    {
-      "name": "Kyane, SalieriC",
-      "flags": {}
-    }
-  ],
   "compatibility": {
     "minimum": "10",
     "verified": "10"
