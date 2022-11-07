@@ -1,0 +1,134 @@
+@import url('swade-hflof-root.css');
+
+
+.swade-official h2,
+.swade-official h3,
+.swade-app h2,
+.swade-app h3 {
+    border-bottom: 1px solid var(--blue);
+}
+
+/*********************************
+*
+*        CHECKMARKS
+*
+*********************************/
+
+.swade .checkmark, 
+.swade-official .checkmark {
+    background-color: var(--blue);
+}
+.swade .check-container:hover input ~ .checkmark, 
+.swade-official .check-container:hover input ~ .checkmark {
+    background-color: var(--dark-blue);
+    border: 1px solid #DEE8ED;
+}
+
+.swade .check-container:hover input~.checkmark, 
+.swade-official .check-container:hover input~.checkmark {
+    box-shadow: 0 0 5px var(--dark-blue);
+}
+
+.swade .check-container:hover input ~ .checkmark:after, 
+.swade-official .check-container:hover input ~ .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.swade .check-container input:checked ~ .checkmark, 
+.swade-official .check-container input:checked ~ .checkmark {
+    background-color: var(--blue);
+}
+.swade .check-container:hover input:checked ~ .checkmark, 
+.swade-official .check-container:hover input:checked ~ .checkmark {
+    background-color: var(--dark-blue);
+}
+.swade .check-container .checkmark:after, 
+.swade-official .check-container .checkmark:after {
+    border: solid var(--white);
+    border-width: 0 3px 3px 0;
+}
+
+/*********************************
+*
+*          Scrollbars
+*
+*********************************/
+
+
+.swade.sheet ::-webkit-scrollbar-thumb,
+.swade-app ::-webkit-scrollbar-thumb,
+.swade-official ::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 3px;
+    background: var(--blue);
+    border: 1px solid var(--dark-blue);
+}
+
+
+/*********************************
+*
+*             Chat
+*
+*********************************/
+
+#chat-log .chat-message {
+    background-image: url("../ui/parchment.jpg");
+}
+textarea#chat-message {
+    background-image: url("../ui/parchment.jpg");
+}
+#chat-log .chat-message.whisper {
+    background-image: url("../ui/parchment2.jpg");
+    border: 3px solid #ffd453;
+}
+
+/*********************************
+*
+*           Chat cards
+*
+*********************************/
+
+.swade.chat-card .card-header {
+    background: var(--dark-blue);
+    margin-left: -5px;
+    border-top: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: none;
+    box-shadow: 0px 15px 10px -15px rgba(0,0,0,1);
+}
+.swade.chat-card .card-header:hover {
+    background: var(--dark-blue);
+}
+
+.swade.chat-card .card-header h3 {
+    flex: 1;
+    margin: 0;
+    line-height: 40px;
+    overflow: hidden;
+    height: 36px;
+    word-break: break-all;
+    border-bottom: none;
+}
+
+.swade.chat-card .card-header img {
+    flex: 0 0 36px;
+    margin-left: 5px;
+    margin-right: 5px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,1);
+}
+.swade.chat-card .card-header a {
+    color: var(--white);
+    vertical-align: text-bottom;
+}
+.swade.chat-card .card-header a:hover {
+    text-shadow: 0 0 7px var(--white);
+}

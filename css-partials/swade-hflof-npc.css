@@ -1,0 +1,146 @@
+@import url('swade-hflof-root.css');
+
+/*********************************
+*
+*        NPC SHEET
+*
+*********************************/
+
+.swade.sheet .window-content {
+    background: var(--blue);
+    background-image: url("../ui/parchment2.jpg");
+}
+
+.swade.sheet.item .sheet-body .header-field, 
+.swade.sheet.actor.character .inventory .items-list .item-header, 
+.swade.sheet.actor .sheet-body .header-field,
+.swade.sheet.actor .inventory .inventory-categories .item-titles {
+    background: var(--dark-blue);
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color : var(--white);
+}
+
+.swade.sheet .tabs .item {
+    background: var(--dark-blue) !important;
+    color : var(--white);
+    border-color: var(--dark-blue) !important;
+}
+
+.swade.sheet .tabs .item:hover, 
+.swade.sheet .tabs .item:focus {
+    background: var(--blue) !important;
+    border-color: var(--dark-blue) !important;
+}
+.swade.sheet .tabs .item.active {
+    background: var(--blue) !important;
+    color : var(--white);
+    border-color: var(--blue) !important;
+}
+.swade.sheet input[type=text]{
+    background: var(--black-point-one);
+}
+
+.swade.sheet.actor .sheet-body .attributes .attributes-list .attribute input {
+    background: var(--black-point-one);  
+}
+
+/*********************************
+*
+*        NPC Editor
+*
+*********************************/
+
+.swade.sheet.item .sheet-body .editor{
+    border: 1px solid var(--black-point-two);
+    border-radius: 6px;
+}
+.swade.sheet.actor .sheet-body .editor{
+    border: 1px solid var(--black-point-two);
+    border-top: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.swade.sheet.actor .sheet-body .header-field .fa-plus:hover {
+    filter: drop-shadow(0 0 5px #FFFFFF);
+}
+.swade.sheet.actor .sheet-body .biography .header-field {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/*********************************
+*
+*          NPC gear
+*
+*********************************/
+
+.swade.sheet.actor .sheet-body .gear .gear-list .gear-card {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--black-point-two);
+}
+.swade.sheet.actor .sheet-body .gear .gear-list .gear-card .card-header {
+    background: none;
+    border-radius: 6px;
+}
+.swade.sheet.actor .sheet-body .gear .gear-list .gear-card .card-content {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
+    border-color: transparent;
+    border-radius: 6px;
+}
+
+
+
+/*********************************
+*
+*          NPC powers
+*
+*********************************/
+.swade.sheet.actor .sheet-body .powers input[type=text]{
+    background: var(--black-point-one);
+    color: var(--white);
+    font-weight: bold;
+    border-color: var(--blue);
+}
+.swade.sheet.actor .powers .arcane-tabs .arcane {
+    border: 1px solid var(--black-point-two);
+    background: var(--black-point-one);
+}
+.swade.sheet.actor .powers .arcane-tabs .arcane:hover, .swade.sheet.actor .powers .arcane-tabs .arcane:focus {
+    background: var(--black-point-two);
+    text-shadow: none;
+    border: 1px solid var(--black-point-two);
+}
+.swade.sheet.actor .powers .arcane-tabs .arcane.active {
+    background: var(--blue);
+    border: 1px solid var(--white);
+}
+.swade.sheet.actor .sheet-body .powers input[type=text]::placeholder{
+    color: rgba(255, 255, 255, 0.75);
+}
+.swade.sheet.actor .sheet-body .powers .powers-list .power {
+    border: 1px solid var(--black-point-one);
+    border-radius: 10px;
+}
+.swade.sheet.actor .sheet-body .powers .powers-list .power .power-header {
+    background: var(--dark-blue);
+    border-bottom: 0px solid var(--black-point-one);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: var(--white);
+}
+.swade.sheet.actor .sheet-body .powers .powers-list .power .power-header .fas:hover {
+    filter: drop-shadow(0 0 5px var(--white));
+    text-shadow: none;
+}
+.swade.sheet.actor .powers .powers-list .power .power-header .item-controls .item-unequipped{
+    text-shadow: none;
+}
+.swade.sheet.actor .powers .powers-list .power .power-header .item-controls {
+    color: var(--white);
+}
+.swade.sheet.actor .powers .powers-list .power .power-header .item-controls .fas {
+    font-weight: normal;
+}

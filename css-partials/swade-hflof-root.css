@@ -1,0 +1,10 @@
+:root {
+    --blue: #8f7a4d;
+    --white: #f1c94d;
+    --white-hover: #FFFFFF;
+    --dark-blue: #8f7a4d;
+    --dark-blue-off: #b5a576;
+    --black-point-one: rgba(0, 0, 0, 0.1);
+    --black-point-two: rgba(0, 0, 0, 0.2);
+
+}

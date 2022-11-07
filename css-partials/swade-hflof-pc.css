@@ -1,0 +1,174 @@
+/*********************************
+*
+*      PLAYER CHARACTER SHEET
+*
+*********************************/
+
+.swade-official .window-content {
+    background-image: url(../ui/parchment.jpg);
+}
+
+
+.swade-official .header,
+.swade-official .effects.active .effect-header {
+    background-image: url(../ui/header_bg.webp);
+    background-size: 105%;
+}
+
+.swade-official .section-header {
+    color: var(--dark-blue);
+}
+
+.swade-official .section-header .controls {
+    color: var(--dark-blue);
+}
+
+.swade-official a:hover {
+    text-shadow: 0 0 8px var(--dark-blue);
+}
+
+/*********************************
+*
+*      PLAYER CHARACTER TABS
+*
+*********************************/
+
+.swade-official .tabs .active {
+    color: var(--dark-blue);
+}
+
+.swade-official .sub-tabs {
+    border-bottom: 1px solid var(--black-point-two);
+    border-top: 1px solid var(--black-point-two);
+}
+
+.swade-official .sub-tabs .item+.item {
+    border-left: 1px solid var(--black-point-two);
+}
+
+.swade-official .sub-tabs .item {
+    color: black;
+}
+
+.swade-official .sub-tabs .item.active {
+    color: var(--dark-blue);
+    text-shadow: none;
+}
+
+.swade-official .sub-tabs .item:hover {
+    text-shadow: 0 0 8px var(--dark-blue);
+}
+
+/*********************************
+*
+*      PLAYER CHARACTER SUMMARY
+*
+*********************************/
+
+.swade-official .armor-display {
+    background-image: url(../ui/sheet_armor.svg);
+    color: var(--dark-blue);
+    padding-bottom: 4px;
+}
+
+.swade-official .parry-display {
+    color: var(--dark-blue);
+    background-image: url(../ui/sheet_parry.svg);
+}
+
+.swade-official .note-box .note-header {
+    background-image: url(../ui/skills_header.webp);
+}
+
+.swade-official .note-box .note-main {
+    background-image: url(../ui/skills_bg.webp);
+    background-size: 100% 100%;
+}
+
+.swade-official .note-box .note-footer {
+    background-image: url(../ui/skills_footer.webp);
+}
+
+/*********************************
+*
+*      PLAYER CHARACTER INPUTS
+*
+*********************************/
+
+.swade-official #conviction input, 
+.swade-official .derived input, 
+.swade-official .additional-stats input, 
+.swade-official .currency input,
+.swade-official .powers .pp-counter input {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.swade-official button:hover,
+.swade-official button:focus,
+.swade-official input[type=text]:hover, 
+.swade-official input[type=text]:focus, 
+.swade-official input[type=number]:hover, 
+.swade-official input[type=number]:focus,
+.swade-official input[type="text"]:focus, 
+.swade-official input[type="number"]:focus, 
+.swade-official input[type="password"]:focus, 
+.swade-official input[type="date"]:focus, 
+.swade-official input[type="time"]:focus {
+    box-shadow: 0 0 5px var(--dark-blue);
+    text-shadow: 0 0 8px var(--dark-blue);
+}
+
+.swade-official .charname-container input[type] {
+    background: transparent;
+    min-width: 300px;
+}
+
+.swade-official .character-detail input[name="data.advances.rank"]:disabled,
+.swade-official .character-detail input[name="data.advances.value"]:disabled {
+    color: var(--color-text-dark-primary);
+    font-weight: 800;
+    background-color: transparent;
+}
+
+.swade-official input[type=number]:disabled, .swade-official input[type=text]:disabled {
+    background: var(--black-point-one);
+    border: 1px solid transparent;
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+.swade-official .primary .attribute select:hover {
+    box-shadow: var(--dark-blue-box-shadow);
+}
+
+/*********************************
+*
+*      PLAYER CHARACTER ITEM LIST
+*
+*********************************/
+
+.swade-official .item-create {
+    color: var(--dark-blue);
+}
+
+.swade-official .item-create:focus, 
+.swade-official .item-create:hover {
+    color: var(--white-hover);
+}
+
+.swade-official .item-create:focus, 
+.swade-official .item-create:hover,
+.swade-official button:hover {
+    text-shadow: 0 0 8px var(--blue);
+    box-shadow: 0 0 5px transparent;
+}
+
+section.inventory header > span,
+.swade-official .effects.active .effect-header > span {
+    color: var(--dark-blue);
+}
+
+section.inventory span.header-name {
+    padding-left: 12px;
+}
