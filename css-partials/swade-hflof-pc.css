@@ -99,22 +99,23 @@
 .swade-official .derived input, 
 .swade-official .additional-stats input, 
 .swade-official .currency input,
-.swade-official .powers .pp-counter input {
+.swade-official .powers .pp-counter input,
+.swade-official .additional-stats select {
     background-color: var(--blue);
     color: var(--white);
+    border-bottom: none;
+    border-radius: 3px;
+    text-align: center;
 }
 
 .swade-official button:hover,
 .swade-official button:focus,
-.swade-official input[type=text]:hover, 
-.swade-official input[type=text]:focus, 
-.swade-official input[type=number]:hover, 
-.swade-official input[type=number]:focus,
-.swade-official input[type="text"]:focus, 
-.swade-official input[type="number"]:focus, 
-.swade-official input[type="password"]:focus, 
-.swade-official input[type="date"]:focus, 
-.swade-official input[type="time"]:focus {
+.swade-official input[type]:hover, 
+.swade-official input[type]:focus, 
+.swade-official .additional-stats select:hover,
+.swade-official .additional-stats select:focus,
+.swade .check-container input:focus+.checkmark,
+.swade-official .check-container input:focus+.checkmark {
     box-shadow: 0 0 5px var(--dark-blue);
     text-shadow: 0 0 8px var(--dark-blue);
 }
